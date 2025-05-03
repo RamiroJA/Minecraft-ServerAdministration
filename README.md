@@ -204,7 +204,7 @@ Luego usando `crontab -e` añadiremos las siguientes lineas
 
 - La cuarta linea va a borrar el directorio que acumula los archivos borrados, simil a la papelera de reciclaje. Esto lo hara todos los dias miercoles a las 4 am.
 
-- La quinta linea va a ingresar el texto "stop" a la sesion minecraft de `screen` a las 07 am todos los dias. Esto es especialmente util porque al ingresar el texto stop en la sesion **minecraft** de screen lo que se logra es parar el servidor de minecraft de manera segura, guardando el estado de ese momento.
+- La quinta linea va a ingresar el texto "stop" a la sesion minecraft de `screen` a las 07:00 am todos los dias. Esto es especialmente util porque al ingresar el texto stop en la sesion **minecraft** de screen lo que se logra es parar el servidor de minecraft de manera segura, guardando el estado de ese momento.
 
 - La sexta linea sirve para iniciar el tunel SSH de forma automatica en una ventana de terminal xfce-4, acto seguido la minimiza para no ocupar espacio en la pantalla de forma innecesaria, esto lo hace todos los dias a las 07:04 am todos los dias.
 
