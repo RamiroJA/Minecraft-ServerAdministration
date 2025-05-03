@@ -202,7 +202,7 @@ Luego usando `crontab -e` añadiremos las siguientes lineas
 
 - La segunda y tercer linea hacen lo mismo que la primera, pero a las 9 pm todos los dias y a las 3 am todos los dias respectivamente, la tercer linea guarda un backup diario, de lunes a domingo en carpetas separadas.
 
-- La cuarta linea va a borrar el directorio que acumula los archivos borrados, simil a la papelera de reciclaje. Esto lo hara todos los dias miercoles a las 7 am.
+- La cuarta linea va a borrar el directorio que acumula los archivos borrados, simil a la papelera de reciclaje. Esto lo hara todos los dias miercoles a las 4 am.
 
 - La quinta linea va a ingresar el texto "stop" a la sesion minecraft de `screen` a las 07 am todos los dias. Esto es especialmente util porque al ingresar el texto stop en la sesion **minecraft** de screen lo que se logra es parar el servidor de minecraft de manera segura, guardando el estado de ese momento.
 
@@ -216,7 +216,7 @@ Hasta esta parte de la guia ya pudimos configurar el servidor notebook y el VPS 
 
 ## Configuracion de bateria (solo para usuarios de notebook).
 
-**Esta configuracion sirve para mi modelo de notebook, aunque no deberia variar demasiado entre proveedores cada uno debera investigar dependiendo su modelo**
+**Esta configuracion sirve para mi modelo de notebook, aunque no deberia variar demasiado entre proveedores cada uno debera investigar dependiendo su modelo.**
 
 Si estamos alojando el servidor en una notebook/laptop y necesitamos que el servidor este 24hs disponible entonces hay que asumir que la notebook estara enchufada a la corriente todo el dia.
 
