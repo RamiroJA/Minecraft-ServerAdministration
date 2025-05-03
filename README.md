@@ -206,7 +206,7 @@ Luego usando `crontab -e` añadiremos las siguientes lineas
 
 - La quinta linea va a ingresar el texto "stop" a la sesion minecraft de `screen` a las 07:00 am todos los dias. Esto es especialmente util porque al ingresar el texto stop en la sesion **minecraft** de `screen` lo que se logra es parar el servidor de minecraft de manera segura, guardando el estado de ese momento.
 
-- La sexta linea sirve para iniciar el tunel SSH de forma automatica en una ventana de terminal xfce-4, acto seguido la minimiza para no ocupar espacio en la pantalla de forma innecesaria, esto lo hace todos los dias a las 07:04 am todos los dias.
+- La sexta linea sirve para iniciar el tunel SSH de forma automatica en una ventana de terminal xfce-4, acto seguido la minimiza para no ocupar espacio en la pantalla de forma innecesaria, esto lo hace todos los dias a las 07:04 am.
 
 - La septima linea lo que hara es correr el script `minecraft.sh` en una sesion de `screen` llamada **minecraft** (esto lo sabemos porque el script `minecraft.sh` comienza con `screen -S minecraft`). Esto permitira que el servidor se inicie de forma automatica todos los dias a las 07:05 am. 
 
