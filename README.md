@@ -242,26 +242,26 @@ Si queremos ver mas detalles de la bateria podemos correr `sudo tlp-stat -b` y `
 
 En mi caso utilizo la version de Minecraft 1.21.5 con la ultima version de `fabric`.
 
-- Chestprotection (Sirve para proteger los cofres, solo lo puede abrir el dueño si lo configura).
+- **Chestprotection** (Sirve para proteger los cofres, solo lo puede abrir el dueño si lo configura).
 
-- Chunky (Mod para precargar porciones grandes de mapa, sirve para aumentar la performance del servidor).
+- **Chunky** (Mod para precargar porciones grandes de mapa, sirve para aumentar la performance del servidor).
 
-- Easyauth (Este mod sirve para que los jugadores al ingresar al servidor tengan que registrarse y utilizar una contraseña, es una buena medida de seguridad).
+- **Easyauth** (Este mod sirve para que los jugadores al ingresar al servidor tengan que registrarse y utilizar una contraseña, es una buena medida de seguridad).
 
-- Easywhitelist (El mod sirve para administrar la whitelist del servidor desde la consola con el servidor en vivo de manera facil, es otra medida de seguridad).
+- **Easywhitelist** (El mod sirve para administrar la whitelist del servidor desde la consola con el servidor en vivo de manera facil, es otra medida de seguridad).
 
-- FabricAPI (Contiene dependencias para que puedan funcionar algunos de los mods de fabric).
+- **FabricAPI** (Contiene dependencias para que puedan funcionar algunos de los mods de fabric).
 
-- FallingTree (Sirve para talar arboles de forma instantanea usando un hacha).
+- **FallingTree** (Sirve para talar arboles de forma instantanea usando un hacha).
 
-- JourneyMap (Es un mod para integrar un mapa en pantalla y un menu de mapa en la partida, este mod debe ser instalado tanto en el servidor como en el cliente para funcionar).
+- **JourneyMap** (Es un mod para integrar un mapa en pantalla y un menu de mapa en la partida, este mod debe ser instalado tanto en el servidor como en el cliente para funcionar).
 
-- Lithium (Mod para optimizacion de servidores, contiene configuraciones varias para aumentar la performance).
+- **Lithium** (Mod para optimizacion de servidores, contiene configuraciones varias para aumentar la performance).
 
-- SkinRestorer (El mod sirve para que los usuarios pirata puedan contar con skins cuando se conecten al servidor).
+- **SkinRestorer** (El mod sirve para que los usuarios pirata puedan contar con skins cuando se conecten al servidor).
 
-- Spark (Mod de administracion de networking del servidor, sirve por ejemplo para monitorear el ping del servidor y de los jugadores).
+- **Spark** (Mod de administracion de networking del servidor, sirve por ejemplo para monitorear el ping del servidor y de los jugadores).
 
-- UnlockAllRecipes (Mod para tener todas las recetas desbloqueadas en el menu de crafteo).
+- **UnlockAllRecipes** (Mod para tener todas las recetas desbloqueadas en el menu de crafteo).
 
 ---
