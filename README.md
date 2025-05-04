@@ -182,11 +182,11 @@ Usando `sudo crontab -e` añadiremos las siguientes lineas.
 Luego usando `crontab -e` añadiremos las siguientes lineas
 
 ```
-0 9 * * * rm -rf /home/SERVER-BACKUP/diario/mañana/SERVER && cp -rf /home/[your-user]/Desktop/SERVER /home/[your-user]/Desktop/SERVER-BACKUP/diario/mañana
+0 9 * * * rm -rf /home/[your-user]/Desktop/SERVER-BACKUP/diario/mañana/SERVER && cp -rf /home/[your-user]/Desktop/SERVER /home/[your-user]/Desktop/SERVER-BACKUP/diario/mañana
 
-0 21 * * * rm -rf /home/SERVER-BACKUP/diario/noche/SERVER && cp -rf /home/[your-user]/Desktop/SERVER /home/[your-user]/Desktop/SERVER-BACKUP/diario/noche
+0 21 * * * rm -rf /home/[your-user]/Desktop/SERVER-BACKUP/diario/noche/SERVER && cp -rf /home/[your-user]/Desktop/SERVER /home/[your-user]/Desktop/SERVER-BACKUP/diario/noche
 
-0 3 * * * rm -rf /home/SERVER-BACKUP/semanal/$(date +\%A) && cp -rf /home/[your-user]/Desktop/SERVER /home/[your-user]/Desktop/SERVER-BACKUP/semanal/$(date +\%A)/
+0 3 * * * rm -rf /home/[your-user]/Desktop/SERVER-BACKUP/semanal/$(date +\%A) && cp -rf /home/[your-user]/Desktop/SERVER /home/[your-user]/Desktop/SERVER-BACKUP/semanal/$(date +\%A)/
 
 0 4 * * 3 rm -rf /home/[your-user]/.local/share/Trash/files/ && cd /home/[your-user]/.local/share/Trash/ && mkdir files && chmod 700 files
 
@@ -211,6 +211,22 @@ Luego usando `crontab -e` añadiremos las siguientes lineas
 - La septima linea lo que hara es correr el script `minecraft.sh` en una sesion de `screen` llamada **minecraft** (esto lo sabemos porque el script `minecraft.sh` comienza con `screen -S minecraft`). Esto permitira que el servidor se inicie de forma automatica todos los dias a las 07:05 am. 
 
 **Revisando los puntos podemos ver que el servidor estara inactivo todos los dias entre las 07:00 am y las 07:05 am.** 
+
+### Configurando Screen
+
+`screen` tiene la desventaja de que no soporta usar la rueda del raton para navegar en su terminal, es decir que solo vamos a poder visualizar los logs en vivo del servidor que se vean solamente en la ventana de la terminal. Ademas hay que configurar `screen` para almacenar los logs y poderlos visualizar en vivo.
+
+Para esto tenemos que:
+
+`cd /home/[tu-usuario] && touch .screenrc`
+
+`nano .screenrc`
+
+Una vez dentro del archivo `.screenrc` tendremos que ingresar la siguiente linea:
+
+`defscrollback 10000` de esta manera `screen` almacenara hasta 10000 lineas en la terminal.
+
+Para poder navegar por los logs vamos a tener que presionar `ctrl+A` y luego por separado presionar `esc`, una vez hecho eso vamos a poder navegar por los logs usando las flechas de direccion o las teclas `PgUp y PgDwn`, una vez que terminemos de navegar por los logs podemos presionar la tecla `esc` nuevamente y la terminal va a continuar mostrando los ultimos logs.
 
 Hasta esta parte de la guia ya pudimos configurar el servidor notebook y el VPS para poder alojar el servidor de minecraft, pudimos configurar el servidor de minecraft para correr de forma eficiente y pudimos automatizar las tareas de backup y administracion del servidor.
 
